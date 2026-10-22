@@ -1,0 +1,18 @@
+cong_suat_w = 250
+so_phut = 90
+don_gia_kwh = 3000
+
+dien_nang_kwh = cong_suat_w * so_phut / 60 / 1000
+chi_phi = dien_nang_kwh * don_gia_kwh
+
+print("--- Kết quả khi so_phut = 90 ---")
+print("Điện năng tiêu thụ (kWh):", dien_nang_kwh, "- Kiểu:", type(dien_nang_kwh))
+print("Chi phí điện (VNĐ):", chi_phi, "- Kiểu:", type(chi_phi))
+
+so_phut = 60
+dien_nang_kwh = cong_suat_w * so_phut / 60 / 1000
+chi_phi = dien_nang_kwh * don_gia_kwh
+
+print("\n--- Kết quả sau khi thay so_phut = 60 ---")
+print("Điện năng tiêu thụ mới (kWh):", dien_nang_kwh, "- Kiểu:", type(dien_nang_kwh))
+print("Chi phí điện mới (VNĐ):", chi_phi, "- Kiểu:", type(chi_phi))
